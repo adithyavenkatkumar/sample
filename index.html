@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One Login</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Social Icons & Eye Toggle -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+</head>
+<body>
+    <div class="login-card">
+        <h2>Welcome Back</h2>
+        <p>Login with your social media or email</p>
+        
+        <!-- Social Login Buttons -->
+        <div class="social-login">
+            <button class="social-btn google"><i class="fab fa-google"></i> Google</button>
+            <button class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+        </div>
+
+        <div class="separator"><span>or</span></div>
+
+        <!-- Standard Login Form -->
+        <form>
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="mail@example.com" required>
+            </div>
+            
+            <div class="input-group">
+                <label>Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="••••••••" required>
+                    <i class="fa-solid fa-eye" id="togglePassword"></i>
+                </div>
+            </div>
+
+            <div class="form-footer">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot?</a>
+            </div>
+
+            <button type="submit" class="submit-btn">Login to Account</button>
+        </form>
+
+        <p class="signup-text">New here? <a href="#">Create an account</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
